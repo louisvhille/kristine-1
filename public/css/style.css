@@ -88,7 +88,7 @@ h1 {
     position: relative;
 
     .letter-content {
-        font-size: clamp(12px, 4vw, 24px);
+        font-size: 5vw;
         position: absolute;
         top: 0;
         left: 0;
