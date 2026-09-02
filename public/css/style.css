@@ -1,0 +1,128 @@
+:root {
+    --pink-1: #FDDAED;
+    --pink-2: #F099C4;
+    --pink-3: #F099C4;
+
+    --purple-1: #F099C4;
+}
+
+* {
+    font-family: "Pixelify Sans", sans-serif;
+    -webkit-touch-callout: none; /* iOS Safari (disables long-press callout menu) */
+    -webkit-user-select: none; /* Safari and Chrome */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Standard syntax (Chrome, Edge, Opera) */
+}
+
+body {
+    background-image: url("/public/img/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100dvh;
+    margin: 0;
+}
+
+h1 {
+    color: var(--pink-2);
+    font-size: 50px;
+    -webkit-text-stroke: 0.5px #FFFFFF;
+    text-stroke: 0.5px #FFFFFF;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#page-1,
+#page-2,
+#page-3,
+#page-4,
+#page-5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.louie-1 {
+    height: 400px;
+    width: 255px;
+}
+
+.start-btn {
+    cursor: pointer;
+    height: 50px;
+    width: 147px;
+    margin-top: 20px;
+    animation: pulse-zoom 1s infinite ease-in-out;
+}
+
+.gift-box {
+    height: 90px;
+    width: 94px;
+    margin-top: 40px;
+    animation: pulse-zoom 1s infinite ease-in-out;
+}
+
+.back-btn {
+    cursor: pointer;
+    height: 50px;
+    width: 61px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.message {
+    position: absolute;
+    top: 200px;
+    z-index: 2;
+    font-size: 23px;
+    max-width: 300px;
+    margin-top: 135px;
+    text-shadow: 0 0 6px rgba(229, 209, 176, 0.8), 0 0 12px rgba(229, 209, 176, 0.5);
+}
+
+.letter {
+    height: 425px;
+    width: 730px;
+    margin-top: 90px;
+    transform: rotate(90deg);
+}
+
+.music-player {
+    width: 95%;
+}
+
+.kristine-1,
+.kristine-2 {
+    position: absolute;
+    bottom: -20px;
+    left: -35px;
+    height: 400px;
+    width: 255px;
+}
+
+.kristine-1 {
+    z-index: 1;
+}
+
+.together-1 {
+    height: 400px;
+    width: 373px;
+}
+
+@keyframes pulse-zoom {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.25);
+    }
+}
