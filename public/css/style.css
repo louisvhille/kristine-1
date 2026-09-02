@@ -13,6 +13,7 @@
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* Internet Explorer/Edge */
     user-select: none; /* Standard syntax (Chrome, Edge, Opera) */
+    transition: all 0.3s ease-in-out;
 }
 
 body {
@@ -22,6 +23,7 @@ body {
     background-repeat: no-repeat;
     height: 100dvh;
     margin: 0;
+    overflow: hidden;
 }
 
 h1 {
@@ -79,21 +81,17 @@ h1 {
     right: 20px;
 }
 
-.message {
-    position: absolute;
-    top: 200px;
-    z-index: 2;
-    font-size: 23px;
-    max-width: 300px;
-    margin-top: 135px;
-    text-shadow: 0 0 6px rgba(229, 209, 176, 0.8), 0 0 12px rgba(229, 209, 176, 0.5);
-}
-
 .letter {
-    height: 425px;
-    width: 730px;
-    margin-top: 90px;
-    transform: rotate(90deg);
+    font-size: 23px;
+    padding: 40px;
+    margin: 10px;
+    max-width: 90%;
+    text-shadow: 0 0 6px rgba(229, 209, 176, 0.8), 0 0 12px rgba(229, 209, 176, 0.5);
+    transform: scale(0.5);
+    background-image: url("../img/letter.png");
+    background-size: 100% 100%;
+    background-size: center;
+    background-repeat: no-repeat;
 }
 
 .music-player {
@@ -113,6 +111,10 @@ h1 {
     z-index: 1;
 }
 
+.kristine-2 {
+    animation: rotate-dance 5s infinite ease-in-out;
+}
+
 .together-1 {
     height: 400px;
     width: 373px;
@@ -124,5 +126,20 @@ h1 {
     }
     50% {
         transform: scale(1.25);
+    }
+}
+
+@keyframes rotate-dance {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(10deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-10deg);
     }
 }

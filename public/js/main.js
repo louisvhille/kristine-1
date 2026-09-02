@@ -14,6 +14,24 @@ document.getElementById('gift-1').addEventListener('click', function() {
     showPage3();
 });
 
+document.getElementById('letter').addEventListener('click', function() {
+    const kristine = document.getElementById('kristine-1');
+    const currentOpacity = window.getComputedStyle(kristine).opacity;
+
+    if (currentOpacity === '0' || currentOpacity === '') {
+        document.getElementById('letter').style.transform = 'scale(0.5)';
+        kristine.style.opacity = '1';
+    }
+    else {
+        document.getElementById('letter').style.transform = 'scale(1)';
+        kristine.style.opacity = '0';
+    }
+});
+
+document.getElementById('kristine-1').addEventListener('click', function() {
+    
+});
+
 document.getElementById('gift-2').addEventListener('click', function() {
     showPage4();
 });
@@ -54,6 +72,9 @@ function showPage3() {
     page3.style.display = 'flex';
     page4.style.display = 'none';
     page5.style.display = 'none';
+
+    document.getElementById('letter').style.transform = 'scale(0.5)';
+    document.getElementById('kristine-1').style.opacity = 1;
 }
 
 function showPage4() {
