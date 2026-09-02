@@ -86,7 +86,6 @@ h1 {
     padding: 40px;
     margin: 10px;
     max-width: 90%;
-    text-shadow: 0 0 6px rgba(229, 209, 176, 0.8), 0 0 12px rgba(229, 209, 176, 0.5);
     transform: scale(0.5);
     background-image: url("../img/letter.png");
     background-size: 100% 100%;
